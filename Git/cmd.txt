@@ -1,0 +1,18 @@
+1.git config user.name ----------
+
+2.git config user.email ---------
+
+3.git init
+4.git add .
+5.git commit -m"comment"
+
+6.git checkout -b internet ==>create a branch
+7.git branch ==>to check Branch
+8.git merge internet ==>in master
+9.git branch -d internet==>to delete branch
+
+10.git add . and git commit -m"comment" =>>to handle the git conflict.
+
+
+git push
+git clone link
