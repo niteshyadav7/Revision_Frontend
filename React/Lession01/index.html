@@ -31,7 +31,10 @@
         const root = ReactDOM.createRoot(el);
         root.render(div);
         */
-
+      /* 
+      
+      
+    //   BY USING JSX
       const header = (
         <div>
           <h1>Hello World!</h1>
@@ -42,6 +45,25 @@
       const el = document.getElementById("root");
       const root = ReactDOM.createRoot(el);
       root.render(header);
+      */
+
+      /*    BY USING DIRECTLY REACT
+      const pic = React.createElement("img", {
+        src: "https://files.codingninjas.in/coding-ninjas-24647.png",
+        alt: "image of Ninjas",width:'100'
+      });
+      ReactDOM.createRoot(document.getElementById("root")).render(pic);
+      */
+
+      /*
+      const pic = (
+        <img width="100"
+          className="images"
+          src="https://files.codingninjas.in/coding-ninjas-24647.png"
+        />
+      );
+      ReactDOM.createRoot(document.getElementById("root")).render(pic);
+      */
     </script>
   </body>
 </html>
