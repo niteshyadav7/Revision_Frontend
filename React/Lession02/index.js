@@ -267,6 +267,7 @@
 //   return <h1>{<Table /> && <Not />}</h1>;
 // }
 
+/*
 function App() {
   const day = [
     "Sunday",
@@ -477,5 +478,173 @@ function App() {
     </table>
   );
 }
+*/
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// const timeTable = {
+//   Monday: {
+//     9: {
+//       subject: "Maths",
+//       teacher: "Brijesh Mishra",
+//       time: "1 hour",
+//     },
+//     10: {
+//       subject: "Physics",
+//       teacher: "Sumit Yadav",
+//       time: "1 hour",
+//     },
+//     11: {
+//       subject: "Chemistry",
+//       teacher: "Vedanti Joshi",
+//       time: "1 hour",
+//     },
+//     13: {
+//       subject: "English Litrature",
+//       teacher: "Mayur Pandey",
+//       time: "1 hour",
+//     },
+//     14: {
+//       subject: "Hindi Vyakaran",
+//       teacher: "Sony Desai",
+//       time: "1 hour",
+//     },
+//     15: {
+//       subject: "PT",
+//       teacher: "Sonu Tyagi",
+//       time: "1 hour",
+//     },
+//   },
+//   Tuesday: {
+//     9: {
+//       subject: "Physics",
+//       teacher: "Sumit Yadav",
+//       time: "1 hour",
+//     },
+//     10: {
+//       subject: "Hindi Sahitya",
+//       teacher: "Ramesh Jha",
+//       time: "1 hour",
+//     },
+//     11: {
+//       subject: "Environtal Studies",
+//       teacher: "Rakesh Prakash",
+//       time: "1 hour",
+//     },
+//     13: {
+//       subject: "Biology",
+//       teacher: "Kuldeep Narayan",
+//       time: "1 hour",
+//     },
+//     14: {
+//       subject: "Maths",
+//       teacher: "Brijesh Mishra",
+//       time: "1 hour",
+//     },
+//     15: {
+//       subject: "Physics Practical",
+//       teacher: "Sumit Yadav",
+//       time: "1 hour",
+//     },
+//   },
+//   Wednesday: {
+//     9: {
+//       subject: "Chemistry",
+//       teacher: "Vedanti Joshi",
+//       time: "1 hour",
+//     },
+//     10: {
+//       subject: "English Grammar",
+//       teacher: "Aditi Upasane",
+//       time: "1 hour",
+//     },
+//     11: {
+//       subject: "Maths",
+//       teacher: "Brijesh Mishra",
+//       time: "1 hour",
+//     },
+//     13: {
+//       subject: "English Litrature",
+//       teacher: "Mayur Pandey",
+//       time: "1 hour",
+//     },
+//     14: {
+//       subject: "Physics",
+//       teacher: "Sumit Yadav",
+//       time: "1 hour",
+//     },
+//     15: {
+//       subject: "Chemistry Practical",
+//       teacher: "Vedanti Joshi",
+//       time: "1 hour",
+//     },
+//   },
+//   Thursday: {
+//     9: {
+//       subject: "Biology",
+//       teacher: "Kuldeep Narayan",
+//       time: "1 hour",
+//     },
+//     10: {
+//       subject: "Hindi Sahitya",
+//       teacher: "Ramesh Jha",
+//       time: "1 hour",
+//     },
+//     11: {
+//       subject: "Chemistry",
+//       teacher: "Vedanti Joshi",
+//       time: "1 hour",
+//     },
+//     13: {
+//       subject: "Maths",
+//       teacher: "Brijesh Mishra",
+//       time: "1 hour",
+//     },
+//     14: {
+//       subject: "Physics",
+//       teacher: "Sumit Yadav",
+//       time: "1 hour",
+//     },
+//     15: {
+//       subject: "Biology Practical",
+//       teacher: "Kuldeep Narayan",
+//       time: "1 hour",
+//     },
+//   },
+//   Friday: {
+//     9: {
+//       subject: "English Litrature",
+//       teacher: "Mayur Pandey",
+//       time: "1 hour",
+//     },
+//     10: {
+//       subject: "Hindi Sahitya",
+//       teacher: "Ramesh Jha",
+//       time: "1 hour",
+//     },
+//     11: {
+//       subject: "English Grammar",
+//       teacher: "Aditi Upasane",
+//       time: "1 hour",
+//     },
+//     13: {
+//       subject: "Biology",
+//       teacher: "Kuldeep Narayan",
+//       time: "1 hour",
+//     },
+//     14: {
+//       subject: "Hindi Vyakaran",
+//       teacher: "Sony Desai",
+//       time: "1 hour",
+//     },
+//     15: {
+//       subject: "PT",
+//       teacher: "Sonu Tyagi",
+//       time: "1 hour",
+//     },
+//   },
+// };
+
+// const newObj = Object.keys(timeTable).map((day) =>
+//   Object.keys(timeTable[day]).map((hrs) => hrs)
+// );
+// console.log(newObj);
+// // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
