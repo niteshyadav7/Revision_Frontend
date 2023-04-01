@@ -19,8 +19,43 @@
 
 // DYNAMIC FORM SUBMIT:
 
+let fname;
+let email;
+let about;
 
+const handleName = (e) => {
+  fname = e.target.value;
+  root.render(<App />)
+};
+const handleEmail = (e) => {
+  email = e.target.value;
+  root.render(<App />)
+};
+const handleAbout = (e) => {
+  about = e.target.value;
+  root.render(<App />)
+};
 
+const Card = () => {
+  return (
+    <>
+      <h3>Name:{fname}</h3>
+      <p>Email:{email}</p>
+      <p>About:{about}</p>
+    </>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <Card />
+      <input placeholder="Name" onChange={handleName} />
+      <input type="email" placeholder="email" onChange={handleEmail} />
+      <textarea placeholder="about" onChange={handleAbout}></textarea>
+    </>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
