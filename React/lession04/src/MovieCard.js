@@ -1,59 +1,74 @@
 import React from "react";
 
 class MovieCard extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      title: "The Avenger",
-      plot: "Supernatural power shown in movie",
-      price: 199,
-      rating: 8.9,
-    };
-   
-    }
-     handlePlus=()=>{
-      console.log(`stars :`,this);
-  }
   render() {
-    const {title,plot,price,rating}=this.state;
+    // const {movies, onIncStars, onClickFav, onClickAddtocart, onDecStars} =  this.props
+    const { title, plot, poster, price, rating, stars, fav, isInCart } =
+      this.props.movies;
+const {movies,onIncStars}=this.props
     return (
-      <>
-        <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-          alt="images"
-          width={100}
-        />
-        {/* <h3>{this.state.title}</h3>
-        <p>{this.state.plot}</p>
-        <p>Rs.{this.state.price}</p>
-        <p>{this.rating}</p> */}
-        <h3>{title}</h3>
-        <p>{plot}</p>
-        <p>{price}</p>
-        <p>{rating}</p>
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/43/43625.png"
-            alt="images of minus"
-            width={10}
-          />
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
-            alt="images of star"
-            width={25}
-          />
-          <img onClick={this.handlePlus}
-            src="https://cdn-icons-png.flaticon.com/512/748/748113.png"
-            alt="images of plus"
-            width={10}
-          />
+      //Movie Card
+      <div className="movie-card">
+        {/**Left section of Movie Card */}
+        <div className="left">
+          <img alt="poster" src={poster} />
         </div>
-        <p>
-          <button>favorite</button>&nbsp;
-          <button>Add to cart</button>
-        </p>
-      </>
+
+        {/**Right section Movie Card */}
+        <div className="right">
+          {/**Title, plot, price of the movie */}
+          <div className="title">{title}</div>
+          <div className="plot">{plot}</div>
+          <div className="price">Rs. {price}</div>
+
+          {/**Footer starts here with ratings, stars and buttons */}
+          <div className="footer">
+            <div className="rating">{rating}</div>
+
+            {/**Star image with increase and decrease buttons and star count */}
+            <div className="star-dis">
+              <img
+                className="str-btn"
+                alt="Decrease"
+                src="https://cdn-icons-png.flaticon.com/128/2801/2801932.png"
+                // onClick={() => onDecStars(movies)}
+              />
+              <img
+                className="stars"
+                alt="stars"
+                src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png"
+              />
+              <img
+              onClick={()=>onIncStars(movies)}
+                className="str-btn"
+                alt="increase"
+                src="https://cdn-icons-png.flaticon.com/128/2997/2997933.png"
+                // No binding required as addStars() is an arrow function
+                // onClick={() => onIncStars(movies)}
+              />
+              <span className="starCount">{stars}</span>
+            </div>
+
+            {/**conditional rendering on Favourite button */}
+            <button
+              className={fav ? "unfavourite-btn" : "favourite-btn"}
+              // onClick={() => onClickFav(movies)}
+            >
+              {fav ? "Un-favourite" : "Favourite"}
+            </button>
+
+            {/**Conditional Rendering on Add to Cart Button */}
+            <button
+              className={isInCart ? "unfavourite-btn" : "cart-btn"}
+              // onClick={() => onClickAddtocart(movies)}
+            >
+              {isInCart ? "Remove from Cart" : "Add to Cart"}
+            </button>
+          </div>
+        </div>
+      </div>
     );
   }
 }
+
 export default MovieCard;
