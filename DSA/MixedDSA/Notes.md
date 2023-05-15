@@ -1,6 +1,7 @@
 # Data Structure And Algogithms
 
 ## 1. Is a Number Prime or Not?
+
 ```
  public static void IsPrimeNumber(int num) {
         int count = 0;
@@ -18,7 +19,9 @@
     }
 
 ```
-## 2. Print all  Prime Number 
+
+## 2. Print all Prime Number
+
 ```
 public static void allPrimeNumber(int low, int high) {
         for (int i = low; i <= high; i++) {
@@ -38,7 +41,7 @@ public static void allPrimeNumber(int low, int high) {
 
 ```
 
-## 3.Print all fibbonacci Number.
+## 3.Print all fibonacci Number.
 
 ```
  public static void printFibbo(int num) {
@@ -49,6 +52,40 @@ public static void allPrimeNumber(int low, int high) {
             int c = a + b;
             a = b;
             b = c;
+        }
+    }
+```
+
+## 4.Count digits
+
+```
+ public static void countDigits(int num) {
+
+        int count = 0;
+        while (num > 0) {
+            num = num / 10;
+            count++;
+        }
+        System.out.println(count);
+    }
+```
+
+## 5.Write Digits from Right to Left
+## IMPORTANT QUESTION:
+```
+ public static void printDigitsR_L(int digit) {
+        int temp = digit;
+        int nod = 0;
+        while (temp != 0) {
+            temp = temp / 10;
+            nod++;
+        }
+        int div = (int) Math.pow(10, nod - 1);
+        while (div != 0) {
+            int q = digit / div;
+            System.out.println(q);
+            digit = digit % div;
+            div = div / 10;
         }
     }
 ```
