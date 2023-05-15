@@ -103,3 +103,50 @@ public static void allPrimeNumber(int low, int high) {
         }
     }
 ```
+## 6. Pattern Problems
+
+```
+ // SQUARE PRINT:
+    // *****
+    // *****
+    // *****
+    // *****
+    // *****
+    public static void starSquare(int num) {
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    // TRIANGULAR PRINT:
+
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+    public static void starTriangle(int num) {
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+    public static void starInvertedTriangle(int num) {
+        for (int i = num; i > 0; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+```
