@@ -37,3 +37,18 @@ public static void allPrimeNumber(int low, int high) {
     }
 
 ```
+
+## 3.Print all fibbonacci Number.
+
+```
+ public static void printFibbo(int num) {
+        int a = 0;
+        int b = 1;
+        for (int i = 0; i < num; i++) {
+            System.out.println(a);
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+    }
+```
