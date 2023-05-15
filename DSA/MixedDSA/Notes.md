@@ -71,8 +71,12 @@ public static void allPrimeNumber(int low, int high) {
 ```
 
 ## 5.Write Digits from Right to Left
+
 ## IMPORTANT QUESTION:
+
 ```
+~~~ Right to Left ~~~
+
  public static void printDigitsR_L(int digit) {
         int temp = digit;
         int nod = 0;
@@ -86,6 +90,16 @@ public static void allPrimeNumber(int low, int high) {
             System.out.println(q);
             digit = digit % div;
             div = div / 10;
+        }
+    }
+
+~~~ Left to Right ~~~
+ public static void printDigitsL_R(int digit) {
+        while (digit != 0) {
+            int rem = digit % 10;
+            System.out.println(rem);
+            digit /= 10;
+
         }
     }
 ```

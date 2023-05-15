@@ -20,9 +20,19 @@ public class printDigits {
         }
     }
 
+    public static void printDigitsL_R(int digit) {
+        while (digit != 0) {
+            int rem = digit % 10;
+            System.out.println(rem);
+            digit /= 10;
+
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        printDigitsR_L(num);
+        // printDigitsR_L(num);
+        printDigitsL_R(num);
     }
 }
