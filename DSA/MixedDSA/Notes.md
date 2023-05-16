@@ -193,3 +193,43 @@ public static void allPrimeNumber(int low, int high) {
         }
     }
 ```
+
+## 8. Print Pattern Alphabetical Order.
+
+```
+   // a
+    // ab
+    // abc
+    // abcd
+    // abcde
+    public static void alphabaticalTrinagular(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print((char) (96 + j));
+            }
+            System.out.println();
+        }
+    }
+```
+
+## 9. Print Pattern With spaces
+
+```
+//      *
+//     **
+//    ***
+//   ****
+//  *****
+    public static void spacesPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int k = 1; k <= n - i; k++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+```
