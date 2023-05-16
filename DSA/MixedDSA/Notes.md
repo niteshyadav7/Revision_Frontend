@@ -233,7 +233,7 @@ public static void allPrimeNumber(int low, int high) {
     }
 
 
-   
+
     // IMPORTANT QUESTION:
 //      *
 //     ***
@@ -255,4 +255,27 @@ public static void allPrimeNumber(int low, int high) {
         }
     }
 
+```
+
+## 10. Print X in Pattern
+
+```
+// *   *
+//  * *
+//   *
+//  * *
+// *   *
+    public static void printX(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == j || i + j == 6) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+    }
 ```
