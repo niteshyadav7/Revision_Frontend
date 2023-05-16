@@ -155,7 +155,7 @@ public static void allPrimeNumber(int low, int high) {
 ## 7. Pattern type second
 
 ```
- // 1
+    // 1
     // 1 2 3
     // 1 2 3 4 5
     public static void oddSeries(int n) {
