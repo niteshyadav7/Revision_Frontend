@@ -315,4 +315,18 @@ public static void allPrimeNumber(int low, int high) {
         // System.out.println(count);
         return count;
     }
+
+
+
+       public static int AnyToD(int num, int base) {
+        int ans = 0;
+        int p = 1;
+        while (num != 0) {
+            int rem = num % 10;
+            num /= 10;
+            ans += rem * p;
+            p = p * base;
+        }
+        return ans;
+    }
 ```
