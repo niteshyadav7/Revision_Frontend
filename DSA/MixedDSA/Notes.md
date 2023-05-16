@@ -278,10 +278,10 @@ public static void allPrimeNumber(int low, int high) {
             System.out.println();
         }
     }
-    
-    
-    
-      
+
+
+
+
 // ****
 // *  *
 // *  *
@@ -297,5 +297,22 @@ public static void allPrimeNumber(int low, int high) {
             }
             System.out.println();
         }
+    }
+```
+
+## 11.Find the Digit Frequency of a Number.
+
+```
+  public static int digitFrequencyOfNumber(int n, int x) {
+        int count = 0;
+        while (n != 0) {
+            int rem = n % 10;
+            n = n / 10;
+            if (rem == x) {
+                count++;
+            }
+        }
+        // System.out.println(count);
+        return count;
     }
 ```
