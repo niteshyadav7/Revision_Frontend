@@ -344,3 +344,31 @@ public static void allPrimeNumber(int low, int high) {
         return input;
     }
 ```
+## 13.Masai School Questions :
+```
+
+    public static void searchNumber(int arr[], int x) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                count++;
+                break;
+            }
+        }
+        if (count > 0) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
+    }
+
+    public static void countGreaterBothSide(int arr[]){
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>arr[i+1]&&arr[i]>arr[i-1]){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+```
