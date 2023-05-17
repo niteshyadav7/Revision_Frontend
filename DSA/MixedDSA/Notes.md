@@ -330,3 +330,17 @@ public static void allPrimeNumber(int low, int high) {
         return ans;
     }
 ```
+
+## 12. How to take Input in given Array.
+
+```
+ public static int[] takeInput() {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int input[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            input[i] = sc.nextInt();
+        }
+        return input;
+    }
+```
